@@ -10,8 +10,7 @@
 <link href="images/apple-touch-startup-image-640x920.png" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
 <title>varius - mobile template</title>
 <link rel="stylesheet" href="css/framework7.css">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="style.css">
 <link type="text/css" rel="stylesheet" href="css/swipebox.css" />
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,900' rel='stylesheet' type='text/css'>
 </head>
@@ -23,25 +22,35 @@
 
     <div class="panel panel-left panel-reveal">
 	<div class="view view-subnav">
-  	<div class="pages">
+	<div class="pages">
+		<div data-page="panel-leftmenu" class="page pagepanel">	
+                     <div class="page-content">
+			<nav class="main-nav icons_31">
+			<ul>
+			<li><a href="index.html" class="close-panel" data-view=".view-main"><img src="images/icons/black/home.png" alt="" title="" /><span>Home</span></a></li>
+			<li><a href="about.html" class="close-panel" data-view=".view-main"><img src="images/icons/black/mobile.png" alt="" title="" /><span>About</span></a></li>
+			<li><a href="features.html" class="close-panel" data-view=".view-main"><img src="images/icons/black/features.png" alt="" title="" /><span>Features</span></a></li>
+			
+			<li><a href="#" data-popup=".popup-login" class="open-popup close-panel"><img src="images/icons/black/lock.png" alt="" title="" /><span>Login</span></a></li>
+			<li><a href="team.html" class="close-panel" data-view=".view-main"><img src="images/icons/black/users.png" alt="" title="" /><span>Team</span></a></li>
+			<li><a href="blog.html" class="close-panel" data-view=".view-main"><img src="images/icons/black/blog.png" alt="" title="" /><span>Blog</span></a></li>		
 
-    		<!-- <div data-page="panel-leftmenu" class="page pagepanel">	
-           <div class="page-content">
-        			<nav class="main-nav icons_31">
-        			<ul>
-        			<li><a href="index.html" class="close-panel" data-view=".view-main"><img src="images/icons/black/home.png" alt="" title="" /><span>Home</span></a></li>
-        			<li><a href="about.html" class="close-panel" data-view=".view-main"><img src="images/icons/black/mobile.png" alt="" title="" /><span>About</span></a></li>
-        			<li><a href="features.html" class="close-panel" data-view=".view-main"><img src="images/icons/black/features.png" alt="" title="" /><span>Features</span></a></li>
-        			
-        			<li><a href="#" data-popup=".popup-login" class="open-popup close-panel"><img src="images/icons/black/lock.png" alt="" title="" /><span>Login</span></a></li>
-        			<li><a href="team.html" class="close-panel" data-view=".view-main"><img src="images/icons/black/users.png" alt="" title="" /><span>Team</span></a></li>
-        			<li><a href="blog.html" class="close-panel" data-view=".view-main"><img src="images/icons/black/blog.png" alt="" title="" /><span>Blog</span></a></li>		
-        			</ul>
-        			</nav>
-           </div>
-    		</div> -->
-        
-  	  </div>
+			<li><a href="photos.html" class="close-panel" data-view=".view-main"><img src="images/icons/black/photos.png" alt="" title="" /><span>Photos</span></a></li>
+			<li><a href="videos.html" class="close-panel" data-view=".view-main"><img src="images/icons/black/video.png" alt="" title="" /><span>Videos</span></a></li>
+			<li><a href="music.html" class="close-panel" data-view=".view-main"><img src="images/icons/black/music.png" alt="" title="" /><span>Music</span></a></li>
+			
+			<li><a href="shop.html" class="close-panel" data-view=".view-main"><img src="images/icons/black/shop.png" alt="" title="" /><span>Shop</span></a></li>
+			<li class="subnav"><a href="categories.html"><img src="images/icons/black/categories.png" alt="" title="" /><span>Categories</span></a></li>
+			<li><a href="cart.html" class="close-panel" data-view=".view-main"><img src="images/icons/black/cart.png" alt="" title="" /><span>Cart</span></a></li>
+			
+			<li><a href="tables.html" class="close-panel" data-view=".view-main"><img src="images/icons/black/tables.png" alt="" title="" /><span>Tables</span></a></li>
+			<li><a href="form.html" class="close-panel" data-view=".view-main"><img src="images/icons/black/form.png" alt="" title="" /><span>Forms</span></a></li>
+			<li><a href="contact.html" class="close-panel" data-view=".view-main"><img src="images/icons/black/contact.png" alt="" title="" /><span>Contact</span></a></li>
+			</ul>
+			</nav>
+                     </div>
+		</div>
+	  </div>
 	</div>  
     </div>
 
@@ -60,6 +69,8 @@
                     <ul>
                       <li><a href="features.html" class="close-panel"><img src="images/icons/black/settings.png" alt="" title="" /><span>Account Settings</span></a></li>
                       <li><a href="features.html" class="close-panel"><img src="images/icons/black/briefcase.png" alt="" title="" /><span>My Account</span></a></li>
+                      <li><a href="features.html" class="close-panel"><img src="images/icons/black/message.png" alt="" title="" /><span>Messages</span><strong>12</strong></a></li>
+                      <li><a href="features.html" class="close-panel"><img src="images/icons/black/love.png" alt="" title="" /><span>Favorites</span><strong>5</strong></a></li>
                       <li><a href="index.html" class="close-panel"><img src="images/icons/black/lock.png" alt="" title="" /><span>Logout</span></a></li>
                     </ul>
                   </nav>
@@ -69,34 +80,346 @@
     <div class="views">
 
       <div class="view view-main">
-
+        <div class="navbarpages whitebg">
+            <div class="navbar_left">
+                <div class="logo_text"><a href="index.html"><i>BFS</i></a></div>
+            </div>      
+            <a href="#" data-panel="left" class="open-panel">
+                <div class="navbar_right"><img src="images/icons/black/menu.png" alt="" title="" /></div>
+            </a>
+            <a href="#" data-panel="right" class="open-panel">
+                <div class="navbar_right graybg"><img src="images/icons/black/user.png" alt="" title="" /></div>
+            </a>          
+        </div>
 
 
         <div class="pages">
 
-          <div data-page="index" class="page homepage">
-            <div class="page-content">
-			     <!-- Login Popup -->
-    <div class=" popup-login">
-        <div class="content-block">
-            <h1 class="txt-c"><i><strong>BPF</strong></i></h1>
-            <div class="loginform">
-                <form id="LoginForm" method="post">
-                    <input type="text" name="Username" value="" class="form_input required" placeholder="username" />
-                    <input type="password" name="Password" value="" class="form_input required" placeholder="password" />
-                    <div class="forgot_pass"><a href="#" data-popup=".popup-forgot" class="open-popup">Forgot Password?</a></div>
-                    <input type="submit" name="submit" class="form_submit" id="submit" value="SIGN IN" />
-                    <a href="main.html" class="">hello</a>
-                </form>
-                <div class="signup_bottom">
-                    <p>Don't have an account?</p>
-                    <a href="#" data-popup=".popup-signup" class="open-popup">SIGN UP</a>
-                </div>
-            </div>
-        </div>
+          <div data-page="index" class="page ">
+            <div id="pages_maincontent">
+                  <!-- Slider -->
+                 <div class="swiper-container-pages swiper-init swiper-container-horizontal" data-effect="slide" data-pagination=".swiper-pagination" data-next-button=".swiper-button-next" data-prev-button=".swiper-button-prev">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide swiper-slide-active" style="width: 375px;">
+                        <img src="images/post-1.jpg" alt="" title="">
+                       </div>
+                      <div class="swiper-slide swiper-slide-next" style="width: 375px;">
+                        <img src="images/post-2.jpg" alt="" title="">
+                      </div>
+                      <div class="swiper-slide" style="width: 375px;">
+                        <img src="images/post-3.jpg" alt="" title="">
+                      </div>      
+                    </div>
+                    <div class="swiper-pagination"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+                    <div class="swiper-button-prev swiper-button-disabled"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>   
+                  <!--slider-->
+        
+<!--tabs -->
+<div class="page-contesnt">
+  <div class="content-block" style="margin: 0 !important">
+    <div class="buttons-row">
+      <!-- Link to 1st tab, active -->
+      <a href="#tab1" class="tab-link active button tabs-home">
+      <img class="tabs-img" src="images/icons/black/food.png" alt="" title="">
+        Makanan
+      </a>
+      <!-- Link to 2nd tab -->
+      <a href="#tab2" class="tab-link button tabs-home">
+      <img class="tabs-img" src="images/icons/black/car.png" alt="" title="">Kendaraan
+      </a>
+      <!-- Link to 3rd tab -->
+      <a href="#tab3" class="tab-link button tabs-home">
+      <img class="tabs-img" src="images/icons/black/building.png" alt="" title="">Hotel
+      </a>
+      <a href="#tab4" class="tab-link button tabs-home">
+      <img class="tabs-img" src="images/icons/black/rocket.png" alt="" title="">Pengalaman
+      </a>
     </div>
-			  
+  
+  <!-- Tabs, tabs wrapper -->
+  <div class="tabs">
+    <!-- Tab 1, active by default -->
+    <div id="tab1" class="tab active">
+      <div class="content-blocks">
+        <!--mixed-form-->
+          <div class=" form-m"> 
+            <div class="row mixed-f">
+            <div class="col-100"><p><strong>BFS</strong> Pencarian makanan terdekat dan murah</p></div>   
+                <div class="col-60">
+                  <div class="contactform">
+                      <div class="form">
+                        <input type="text" name="name" value="" class="form_input h-input">
+                      </div>
+                  </div>
+                </div>
+              <div class="col-40">
+                <a href="#" class="button btnr-20">Filter</a>
+              </div>
             </div>
+          </div>
+        <!--mixed-form--> 
+          <div class="list-block media-list">
+            <ul>
+              <li>
+                <a href="#" class="item-link item-content">
+                  <div class="item-media"><img src="images/makanan/satekecap.jpg" width="120" height="100"></div>
+                  <div class="item-inner">
+                    <div class="item-title-row">
+                      <div class="item-title">Sate Tiban Koperasi</div>
+                    </div>
+                    <div class="item-subtitle">RP.15,000,00</div>
+                    <div class="item-text">Sate Murah Tiban Koperasi</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="item-link item-content">
+                  <div class="item-media"><img src="images/makanan/prata.jpg" width="120" height="100"></div>
+                  <div class="item-inner">
+                    <div class="item-title-row">
+                      <div class="item-title">Prata Amir</div>
+                    </div>
+                    <div class="item-subtitle">RP.19,000,00</div>
+                    <div class="item-text">Prata Amir Tiban Center</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="item-link item-content">
+                  <div class="item-media"><img src="images/makanan/burger.jpg" width="120" height="100"></div>
+                  <div class="item-inner">
+                    <div class="item-title-row">
+                      <div class="item-title">Burger Ramly</div>
+                    </div>
+                    <div class="item-subtitle">RP.12,000,00</div>
+                    <div class="item-text">Burger Ramly</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <!-- Tab 2 -->
+    <div id="tab2" class="tab">
+      <div class="content-blocks">
+        <!--mixed-form-->
+          <div class=" form-m"> 
+            <div class="row mixed-f">
+            <div class="col-100"><p><strong>BFS </strong> Pencarian kendaraan terdekat dan murah </p></div>   
+                <div class="col-60">
+                  <div class="contactform">
+                      <div class="form">
+                        <input type="text" name="name" value="" class="form_input h-input">
+                      </div>
+                  </div>
+                </div>
+              <div class="col-40">
+                <a href="#" class="button btnr-20-k">Filter</a>
+              </div>
+            </div>
+          </div>
+        <!--mixed-form--> 
+          <div class="list-block media-list">
+            <ul>
+              <li>
+                <a href="#" class="item-link item-content">
+                  <div class="item-media"><img src="images/kendaraan/motor-1.jpg" width="120" height="100"></div>
+                  <div class="item-inner">
+                    <div class="item-title-row">
+                      <div class="item-title">Mio Soul 2015</div>
+                    </div>
+                    <div class="item-subtitle">Rp.100.000,00</div>
+                    <div class="item-text">Sewa motor 1 hari</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="item-link item-content">
+                  <div class="item-media"><img src="images/kendaraan/motor-2.jpg" width="120" height="100"></div>
+                  <div class="item-inner">
+                    <div class="item-title-row">
+                      <div class="item-title">Mio Soul 2015</div>
+                    </div>
+                    <div class="item-subtitle">Rp.120.000,00</div>
+                    <div class="item-text">Sewa motor 1 hari</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="item-link item-content">
+                  <div class="item-media"><img src="images/kendaraan/mobil-2.jpg" width="120" height="100"></div>
+                  <div class="item-inner">
+                    <div class="item-title-row">
+                      <div class="item-title">Toyota Cayla</div>
+                    </div>
+                    <div class="item-subtitle">Rp.140.000,00</div>
+                    <div class="item-text">Sewa mobil 1 hari</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <!-- Tab 3 -->
+    <div id="tab3" class="tab">
+      <div class="content-blocks">
+        <!--mixed-form-->
+          <div class=" form-m"> 
+            <div class="row mixed-f">
+            <div class="col-100"><p><strong>BFS</strong> Pencarian penginapan dekat dan termurah</p></div>   
+                <div class="col-60">
+                  <div class="contactform">
+                      <div class="form">
+                        <input type="text" name="name" value="" class="form_input h-input">
+                      </div>
+                  </div>
+                </div>
+              <div class="col-40">
+                <a href="#" class="button btnr-20-h">Filter</a>
+              </div>
+            </div>
+          </div>
+        <!--mixed-form--> 
+          <div class="list-block media-list">
+            <ul>
+              <li>
+                <a href="#" class="item-link item-content">
+                  <div class="item-media"><img src="images/hotel/hotel.jpg" width="120" height="100"></div>
+                  <div class="item-inner">
+                    <div class="item-title-row">
+                      <div class="item-title">Nagoya Mansion</div>
+                    </div>
+                    <div class="item-subtitle">RP.200,000,00</div>
+                    <div class="item-text">Menginap 1 Malam</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="item-link item-content">
+                  <div class="item-media"><img src="images/hotel/hotel.png" width="120" height="100"></div>
+                  <div class="item-inner">
+                    <div class="item-title-row">
+                      <div class="item-title">Pasific</div>
+                    </div>
+                    <div class="item-subtitle">RP.200,000,00</div>
+                    <div class="item-text">Menginap 1 Malam</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="item-link item-content">
+                  <div class="item-media"><img src="images/hotel/kos.jpg" width="120" height="100"></div>
+                  <div class="item-inner">
+                    <div class="item-title-row">
+                      <div class="item-title">Kos Wiwid</div>
+                    </div>
+                    <div class="item-subtitle">RP.1000,000,00</div>
+                    <div class="item-text">1 Bulan Sewa Kos</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <!-- Tab 4 -->
+    <div id="tab4" class="tab">
+      <div class="content-blocks">
+        <!--mixed-form-->
+          <div class=" form-m"> 
+            <div class="row mixed-f">
+            <div class="col-100"><p><strong>BFS</strong> pencarian mengasah ilmu</p></div>   
+                <div class="col-60">
+                  <div class="contactform">
+                      <div class="form">
+                        <input type="text" name="name" value="" class="form_input h-input">
+                      </div>
+                  </div>
+                </div>
+              <div class="col-40">
+                <a href="#" class="button btnr-20-k">Filter</a>
+              </div>
+            </div>
+          </div>
+        <!--mixed-form--> 
+          <div class="list-block media-list">
+            <ul>
+              <li>
+                <a href="#" class="item-link item-content">
+                  <div class="item-media"><img src="images/pengalaman/masak.jpg" width="120" height="100"></div>
+                  <div class="item-inner">
+                    <div class="item-title-row">
+                      <div class="item-title">Belajar Masak</div>
+                    </div>
+                    <div class="item-subtitle">RP.1000,000,00</div>
+                    <div class="item-text">Belajar Masak 1 minggu</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="item-link item-content">
+                  <div class="item-media"><img src="images/pengalaman/makeup.jpg" width="120" height="100"></div>
+                  <div class="item-inner">
+                    <div class="item-title-row">
+                      <div class="item-title">Belajar Makeup</div>
+                    </div>
+                    <div class="item-subtitle">RP.1200,000,00</div>
+                    <div class="item-text">Belajar Makeup 3 hari fast learning</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="item-link item-content">
+                  <div class="item-media"><img src="images/pengalaman/karate.jpg" width="120" height="100"></div>
+                  <div class="item-inner">
+                    <div class="item-title-row">
+                      <div class="item-title">Belajar Karate</div>
+                    </div>
+                    <div class="item-subtitle">RP.1200,000,00</div>
+                    <div class="item-text">Belajar karate 1 minggu fast learning</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>  
+   <div class="content-block-title">Promo</div>
+    <div class="page_single layout_fullwidth_padding">
+      <div class="swiper-container-team swiper-init swiper-container-horizontal" data-effect="slide" data-space-between="10" data-pagination=".swiper-pagination-team" data-slides-per-view="2">
+      
+      <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-429px, 0px, 0px);">
+        <div class="swiper-slide team-block" style="width: 133px; margin-right: 10px;">
+        <a href="about.html" data-view=".view-main" class=""><img src="images/promo-1.jpg" alt="" title=""></a><span>CEO</span>
+        </div>
+        <div class="swiper-slide team-block" style="width: 133px; margin-right: 10px;">
+        <a href="about.html" data-view=".view-main" class=""><img src="images/promo-2.jpg" alt="" title=""></a><span class="">PROGRAMMER</span>
+        </div>
+        <div class="swiper-slide team-block swiper-slide-prev" style="width: 133px; margin-right: 10px;">
+        <a href="about.html" data-view=".view-main" class=""><img src="images/promo-3.jpg" alt="" title=""></a><span>MANAGER</span>
+        </div>
+        <div class="swiper-slide team-block swiper-slide-active" style="width: 133px; margin-right: 10px;">
+        <a href="about.html" data-view=".view-main" class=""><img src="images/promo-4.jpg" alt="" title=""></a><span>ACCOUNTANT</span>
+        </div>
+        <div class="swiper-slide team-block swiper-slide-next" style="width: 133px; margin-right: 10px;">
+        <a href="about.html" data-view=".view-main" class=""><img src="images/avatar.jpg" alt="" title=""></a><span class="">DESIGNER</span>
+        </div>
+      </div>
+      <div class="swiper-pagination-team"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span></div>
+      </div>
+   </div> 
+</div>
+<!-- tabs -->
+   
+         
+        
+         </div>
           </div>
         </div>
 
@@ -107,6 +430,7 @@
 
 	
     <!-- Login Popup -->
+    <div class="popup popup-login">
         <div class="content-block">
             <h4>LOGIN</h4>
             <div class="loginform">
@@ -125,7 +449,7 @@
                 <a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a>
             </div>
         </div>
-
+    </div>
 
     <!-- Register Popup -->
     <div class="popup popup-signup">
@@ -195,10 +519,15 @@
 <script type="text/javascript" src="js/circlemenu.js"></script>
 <script type="text/javascript" src="js/audio.min.js"></script>
 <script type="text/javascript" src="js/my-app.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7zN7MNkOTnueuIvkxUUdWvWwhhO2P9Fc&callback=myMap"></script>
+<script type="text/javascript">
+    
+    // 3 Slides Per View, 10px Between
+var mySwiper2 = myApp.swiper('.swiper-2', {
+  pagination:'.swiper-2 .swiper-pagination',
+  spaceBetween: 0,
+  slidesPerView: 2
+});
 
-
-
-
+</script>
   </body>
 </html>
