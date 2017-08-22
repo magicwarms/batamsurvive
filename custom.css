@@ -1,0 +1,30 @@
+
+
+
+.br-20 { border-radius: 20px }
+
+
+
+
+/* promo */
+
+.promo-content { 
+	text-align: left;
+}
+
+.promo-content h6 {
+	font-weight: 700;
+	padding: 10px 10px 0 10px;
+}
+
+.promo-content span {
+	background-color: none !important;
+	padding: 10px 10px 0 10px !important;	
+}
+
+.item-title {
+	text-transform: uppercase !important;
+	font-weight: 700 !important;
+	color: #000000 !important;
+
+}
