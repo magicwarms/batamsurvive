@@ -236,7 +236,7 @@ width:70px;
 height:70px;
 text-align:center;
 padding:0;
-background-color:#f9f301;
+background-color: #7fde58;
 }
 .navbar_right img{
 display:inline-block;
@@ -244,10 +244,10 @@ max-width:40%;
 padding:20px 0 0 0;
 }
 .whitebg{
-background-color:#ffffff;	
+background-color: #333333;	
 }
 .graybg{
-background-color:#f7f7f7;	
+background-color: #333333;
 }
 /*===============================================*/
 /* 5. CUSTOM BUTTONS */
@@ -932,7 +932,7 @@ display:block;
 font-weight:300;
 font-size:14px;
 letter-spacing:0.5px;
-background-color:#f9f301;
+background-color:#ffffff;
 padding:10px 0;
 }
 ul.team_socials{
