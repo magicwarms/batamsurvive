@@ -28,3 +28,9 @@
 	color: #000000 !important;
 
 }
+
+/* Search */
+.search-page {
+    position: relative;
+    top: 6.7%;
+}
